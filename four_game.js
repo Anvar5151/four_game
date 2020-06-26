@@ -143,28 +143,28 @@ $('.board button').on('click',function() {
 
 
 
-// //Helper function to help you understand Rows and Columns From A Table
-// http://stackoverflow.com/questions/788225/table-row-and-column-number-in-jquery
-//
-// $('.board button').on('click',function(){
-//   // This is the Column Number (starts at zero):
-//   console.log('This is the Column:');
-//   console.log($(this).closest("td").index());
-//   // This is the Row Number:
-//   console.log("This is the Row:");
-//   console.log($(this).closest("tr").index());
-//   console.log('\n');
-//   // This is a way to grab a particular cell (replace):
-//   // $('table').eq(rowIndex).find('td').eq(colIndex)
-// });
-//
-// // Change color on click
-// $('.board button').on('click',function() {
-//   if($(this).css('background-color') === 'rgb(51, 51, 51)'){
-//     $(this).css('background-color','rgb(86, 151, 255)');
-//   }else if ($(this).css('background-color') === 'rgb(86, 151, 255)'){
-//     $(this).css('background-color','rgb(237, 45, 73)');
-//   }else{
-//     $(this).css('background-color','rgb(51, 51, 51)');
-//   }
-// });
+//Helper function to help you understand Rows and Columns From A Table
+http://stackoverflow.com/questions/788225/table-row-and-column-number-in-jquery
+
+$('.board button').on('click',function(){
+  // This is the Column Number (starts at zero):
+  console.log('This is the Column:');
+  console.log($(this).closest("td").index());
+  // This is the Row Number:
+  console.log("This is the Row:");
+  console.log($(this).closest("tr").index());
+  console.log('\n');
+  // This is a way to grab a particular cell (replace):
+  // $('table').eq(rowIndex).find('td').eq(colIndex)
+});
+
+// Change color on click
+$('.board button').on('click',function() {
+  if($(this).css('background-color') === 'rgb(51, 51, 51)'){
+    $(this).css('background-color','rgb(86, 151, 255)');
+  }else if ($(this).css('background-color') === 'rgb(86, 151, 255)'){
+    $(this).css('background-color','rgb(237, 45, 73)');
+  }else{
+    $(this).css('background-color','rgb(51, 51, 51)');
+  }
+});
